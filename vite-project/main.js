@@ -26,5 +26,12 @@ renderer.render( scene, camera );
 
 function animate() {
   requestAnimationFrame( animate );
+
+  torus.rotation.x += .01;
+  torus.rotation.y += .005;
+  torus.rotation.z += .0075;
+
   renderer.render( scene, camera );
 }
+
+animate()
